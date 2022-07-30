@@ -30,7 +30,7 @@ __ex>__
 <br>
 <br>
 
-## 3-2. StringBuilder   
+## 3-2. StringBuilder / StringBuffer 메소드   
 * 가변(mutable) 객체   
    * 새로운 객체를 생성하는 것이 아니라, 기존의 데이터를 더하는 방식
 <br>
@@ -86,15 +86,51 @@ str1.reverse();
 결과: dcba
 ```
 
-#### ⑥
+#### ⑥ ```str.substring(index1, index2)```
+* 특정 부분 문자열을 잘라오는 것   
+__ex>__
+```
+StringBuilder str1 = new StringBuilder("abcdef");
+System.out.println(str1.substring(1, 3));
+
+결과: bc
+```
+
+#### ⑦ ```str.indexOf("value")```   
+* value의 위치를 확인하는 메소드 (큰따옴표)  
+__ex>__   
+```
+StringBuilder str1 = new StringBuilder("abcdef");
+System.out.println(str1.indexOf("a"));
+
+결과: 0
+```
+
+### ⑧ ```str.length()```
+* 문자열 길이를 확인하는 메소드   
+__ex>__   
+```
+StringBuilder str1 = new StringBuilder("abcdef");
+System.out.println(str.length());
+
+결과: 6
+```
+
+### ⑨ ```str.setLength()```
+* 문자열 길이 변경   
+__ex>__   
+```
+StringBuilder str1 = new StringBuilder("abcdef");
+str1.setLength(2);
+System.out.println(str1);
+
+결과: ab
+```
 <br>
 <br>
 
-## 3-3. StringBuffer   
-<br>
 
-
-## 3-4. StringTokenizer   
+## 3-3. StringTokenizer   
 * 설명: 사용자가 지정한 __구분자__ 로 문자열을 나누어주는 클래스
 * 토큰(Token) : 구분자로 쪼개어진 문자열
 * java.util 패키지
