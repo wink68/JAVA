@@ -259,3 +259,22 @@ System.out.println(str2.hasMoreTokens());
 
 결과: true
 ```
+<br>
+<hr>
+
+## 3-4. charAt()   
+* 특정 위치(index값)의 문자열을 불리오는 방법   
+* 아스키 코드
+   * 숫자 0은 아스키 코드값 48   
+   * 문자열 '0' 또는 숫자 48을 빼줘야 원하는 정수값이 나옴   
+
+__ex>__   
+```
+String str = "1 3";
+int A = str.charAt(0);       // 결과: 정수값 49
+int B = str.charAt(0) -'0';  // 결과: 정수값 1  / 문자열 '0'을 빼줌
+int C = str.charAt(0) -48;   // 결과: 정수값 1  / 정수 48을 빼줌
+```
+
+◇ 참고 자료   
+: https://cokes.tistory.com/m/80
