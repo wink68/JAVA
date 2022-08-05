@@ -38,6 +38,7 @@ int N3 = Integer.parseInt(br.readLine());   // readLine으로 받은 String데�
 * BufferedReader 종료   
 <br>
 ◇ 참고 자료   
+
 : https://chloe-ki.tistory.com/entry/java-bufferedreader-and-bufferedwriter-methods-and-exception-handling   
 
 : https://kjwan4435.tistory.com/98   
@@ -99,6 +100,7 @@ __ex>__
 
 ## 3-2. StringBuilder / StringBuffer 메소드   
 * 가변(mutable) 객체   
+
    * 새로운 객체를 생성하는 것이 아니라, 기존의 데이터를 더하는 방식   
    
 ◇ 참고 자료: https://travelbeeee.tistory.com/444?category=845655
@@ -284,6 +286,7 @@ int C = str.charAt(0) -48;   // 결과: 정수값 1  / 정수 48을 빼줌
 
 ## 4-1. BigInteger
 * 선언: __```BigInteger 변수명 = new BigInteger();```__   
+
    * 엄청 큰 수를 계산할 때
    
 ### 1) 계산   
@@ -314,5 +317,39 @@ System.out.println(변수명);   // A가 더 크면 1, 같으면 0,  B가 더 �
 ```
 
 ◇ 참고 자료   
+
 : 백준 단계별 7-8번 문제   
 : https://coding-factory.tistory.com/604   
+
+<br>
+<hr>
+
+## 5. Math   
+### 1) Math.pow()
+* pow = power (제곱)   
+   * 2의 4제곱 = 2 to the power 4 is 16
+
+* 선언 : __```Math.pow(x, y)```__   
+   * x의 y제곱 값 출력
+
+__ex>__   
+```
+System.out.print(Math.pow(3, 2);         // 9.0
+System.out.print((int) Math.pow(3, 2);   // 9
+```
+<br>
+
+### 2) Math.sqrt()   
+* 제곱하면 X가 되는 수 출력 = X의 제곱근 = 루트   
+
+* 선언: __```Math.sqrt(z)```__   
+
+__ex>__   
+```
+System.out.print(Math.sqrt(4));         // 2.0
+System.out.print((int) Math.sqrt(4));   // 2
+```
+<br>
+
+◇ 참고 자료   
+: https://blog.naver.com/scyan2011/221656914043
