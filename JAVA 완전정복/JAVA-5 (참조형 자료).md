@@ -148,7 +148,7 @@ System.out.printlnO(b);
 <br>
 
 ### (5) 참조 자로형으로서 배열의 특징   
-* '='는 sack 메모리 값을 복사
+* '='는 stack 메모리 값을 복사
 
 #### ① 기본 자료형 변수 복사: ```값의 복사```  
 __ex>__   
@@ -156,6 +156,7 @@ __ex>__
 int a = 3;              // stack 메모리값 3
 int b = a; 
 b = 7;                  // b를 7로 변경
+
 System.out.println(a);  // 3  → a의 값을 복사한 것이기에 b를 바꿔도 a에 영향 X
 System.out.println(b);  // 7
 ```
@@ -166,6 +167,7 @@ __ex>__
 int[] a = {3, 4, 5};       // "3, 4, 5"는 Heap 메모리에 저장된 위치
 int[] b = a;               // a와 b 모두 같은 객체(위치)를 가리키고 있음 
 b[0] = 7;
+
 System.out.println(a[0]);  // 7  → a와 b 모두 같은 객체를 가리키고 있기에, b의 값을 바꾸면 a의 값도 바뀜
 System.out.println(b[0]);  // 7
 ```
