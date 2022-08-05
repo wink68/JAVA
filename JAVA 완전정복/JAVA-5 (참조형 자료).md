@@ -146,8 +146,9 @@ System.out.println(a);
 System.out.printlnO(b);
 ```
 <br>
+<
 
-### (5) 참조 자로형으로서 배열의 특징   
+### (5) 참조 자료형으로서 배열의 특징   
 * '='는 stack 메모리 값을 복사
 
 #### ① 기본 자료형 변수 복사: ```값의 복사```  
@@ -170,4 +171,54 @@ b[0] = 7;
 
 System.out.println(a[0]);  // 7  → a와 b 모두 같은 객체를 가리키고 있기에, b의 값을 바꾸면 a의 값도 바뀜
 System.out.println(b[0]);  // 7
+```
+<br>
+<hr>
+
+### (6) 반복문을 이용해 배열 데이터 읽기   
+* 선언 : __```배열의 길이 = 참조변수명.length```__   
+
+__ex>__   
+```
+int[] a = new int[] {3, 4, 5, 6, 7};
+System.out.println(a.length);          // 5
+```
+<br>
+
+### ◆ for 반복문 이용   
+```
+int[] a = new int[100];
+a[0] = 1, a[1] = 2, ..., a[99] = 100;
+
+for (int i=0; i < a.length; i++) {     // 배열 길이 100, 인덱스는 99까지이니 i < a.length
+     System.out.println(a[i]);
+}
+```
+
+### ◆ for-each 반복문 이용   
+* 묶음에서 데이터를 하나씩 꺼내는 것
+* 선언
+```
+for (원소자료형 변수 : 묶음 참조자료형) {
+}
+```
+
+__ex>__   
+```
+int[] a = new int[100];                // a 배열은 참조자료형 변수
+a[0] = 1, a[1] = 2, ..., a[99] = 100;
+
+for (int k : a {                       // a 배열에서 1부터 꺼내서 int k에 저장
+     System.out.println(k);            // int k는 꺼낸 데이터를 저장할 공간
+}
+```
+
+### ★ Tip   
+* __```Arrays.toString(1차원 배열)```__   
+   * 배열값 출력 정적 메서드
+   * 1차원 배열을 정렬해서 한번에 출력해줌
+
+__ex>__   
+```
+System.out.println(Arrays.toString(new int[]{1, 2, 3});   // [1,2,3]
 ```
