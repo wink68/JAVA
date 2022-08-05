@@ -114,6 +114,7 @@ __ex>__
 ```
 int[] a = {3, 4, 5};
 ```
+
 <br>
 <hr>
 
@@ -146,7 +147,7 @@ System.out.println(a);
 System.out.printlnO(b);
 ```
 <br>
-<
+<hr>
 
 ### (5) 참조 자료형으로서 배열의 특징   
 * '='는 stack 메모리 값을 복사
