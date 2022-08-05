@@ -278,3 +278,41 @@ int C = str.charAt(0) -48;   // 결과: 정수값 1  / 정수 48을 빼줌
 
 ◇ 참고 자료   
 : https://cokes.tistory.com/m/80
+
+<br>
+<hr>
+
+## 4-1. BigInteger
+* 선언: __```BigInteger 변수명 = new BigInteger();```__   
+   * 엄청 큰 수를 계산할 때
+   
+### 1) 계산   
+* 덧셈 : ```변수명.add();```   
+* 뺄셈 : ```변수명.substract();```   
+* 곱셈 : ```변수명.
+* 나눗셈 : ```변수명.divide();```   
+* 나머지 : ```변수명.remainder();```   
+<br>
+
+### 2) BigInteger 형 변환   
+* int → BigInteger : ```BigInteger 변수1 = BigInteger.valueOf(정수값);```   
+
+* BigInteger → int : ```int 변수2 = 변수1.intValue();```   
+* BigInteger → long : ```long 변수2 = 변수1.longValue();```
+* BigInteger → float : ```float 변수2 = 변수1.floatValue();```   
+* BigInteger → double : ```double 변수2 = 변수1.doubleValue();```   
+* BigInteger → String : ```String 변수2 = 변수1.toString();```   
+<br>
+
+### 3) BigInteger 두 수 비교   
+```
+BigInteger A = new BigInteger("정수값");
+BigInteger B = new BigInteger("정수값");
+
+int 변수명 = A.compareTo(B);  // 
+System.out.println(변수명);   // A가 더 크면 1, 같으면 0,  B가 더 크면 -1
+```
+
+◇ 참고 자료   
+: 백준 단계별 7-8번 문제   
+: https://coding-factory.tistory.com/604   
