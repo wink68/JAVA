@@ -277,9 +277,14 @@ int A = str.charAt(0);       // 결과: 정수값 49
 int B = str.charAt(0) -'0';  // 결과: 정수값 1  / 문자열 '0'을 빼줌
 int C = str.charAt(0) -48;   // 결과: 정수값 1  / 정수 48을 빼줌
 ```
+<br>
 
 ◇ 참고 자료   
-: https://cokes.tistory.com/m/80
+- __charAt()__: https://cokes.tistory.com/m/80
+<br>
+
+__◇ 아스키 코드__   
+<a href="#"><img src=https://user-images.githubusercontent.com/108077414/183819465-852ae272-11d8-4096-9092-8159a9042317.png width="400px" alt="box model"></a>
 
 <br>
 <hr>
