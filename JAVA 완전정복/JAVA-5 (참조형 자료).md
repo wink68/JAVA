@@ -208,7 +208,7 @@ __ex>__
 int[] a = new int[100];                // a 배열은 참조자료형 변수
 a[0] = 1, a[1] = 2, ..., a[99] = 100;
 
-for (int k : a {                       // a 배열에서 1부터 꺼내서 int k에 저장
+for (int k : a) {                      // a 배열에서 1부터 꺼내서 int k에 저장
      System.out.println(k);            // int k는 꺼낸 데이터를 저장할 공간
 }
 ```
