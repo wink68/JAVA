@@ -37,7 +37,8 @@ int N3 = Integer.parseInt(br.readLine());   // readLine으로 받은 String데�
 #### ③ ```.close()```   
 * BufferedReader 종료   
 <br>
-◇ 참고 자료   
+
+__◇ 참고 자료__   
 
 : https://chloe-ki.tistory.com/entry/java-bufferedreader-and-bufferedwriter-methods-and-exception-handling   
 
@@ -103,7 +104,8 @@ __ex>__
 
    * 새로운 객체를 생성하는 것이 아니라, 기존의 데이터를 더하는 방식   
    
-◇ 참고 자료: https://travelbeeee.tistory.com/444?category=845655
+__◇ 참고 자료__   
+: https://travelbeeee.tistory.com/444?category=845655
 <br>
 <br>
 
@@ -220,8 +222,10 @@ __ex>__
 ```
 StringTokenizer st = new StringTokenizer(br.readLine(), " ");  // 공백으로 구분
 ```
+<br>
 
-◇ 참고 자료   
+__◇ 참고 자료__   
+
 : https://blog.naver.com/dldudcks1779/222252355968
 <br>
 <br>
@@ -279,7 +283,7 @@ int C = str.charAt(0) -48;   // 결과: 정수값 1  / 정수 48을 빼줌
 ```
 <br>
 
-◇ 참고 자료   
+__◇ 참고 자료__   
 - __charAt()__: https://cokes.tistory.com/m/80
 <br>
 
@@ -321,21 +325,24 @@ int 변수명 = A.compareTo(B);  //
 System.out.println(변수명);   // A가 더 크면 1, 같으면 0,  B가 더 크면 -1
 ```
 
-◇ 참고 자료   
+__◇ 참고 자료__   
 
-: 백준 단계별 7-8번 문제   
+: 백준 단계별7 10757번   
+
 : https://coding-factory.tistory.com/604   
 
 <br>
 <hr>
 
 ## 5. Math   
-### 1) Math.pow()
+### 1-1) Math.pow()
 * pow = power (제곱)   
    * 2의 4제곱 = 2 to the power 4 is 16
 
 * 선언 : __```Math.pow(x, y)```__   
-   * x의 y제곱 값 출력
+   * x의 y제곱 값 출력   
+
+* import 필요 X
 
 __ex>__   
 ```
@@ -344,10 +351,11 @@ System.out.print((int) Math.pow(3, 2);   // 9
 ```
 <br>
 
-### 2) Math.sqrt()   
+### 1-2) Math.sqrt()   
 * 제곱하면 X가 되는 수 출력 = X의 제곱근 = 루트   
 
 * 선언: __```Math.sqrt(z)```__   
+* import 필요 X
 
 __ex>__   
 ```
@@ -356,5 +364,52 @@ System.out.print((int) Math.sqrt(4));   // 2
 ```
 <br>
 
-◇ 참고 자료   
+__◇ 참고 자료__   
+
+: 백준 1977번   
+
 : https://blog.naver.com/scyan2011/221656914043
+
+<br>
+
+### 2-1) Math.ceil()
+* 소수점 올림 / import 필요 X
+
+__ex>__
+```
+System.out.println(Math.sqrt(60));                   // 7.745966692414834
+System.out.println(Math.ceil(Math.sqrt(60)));        // 8.0
+System.out.println((int) Math.ceil(Math.sqrt(60)));  // 8
+```
+<br>
+
+### 2-2) Math.floor()
+* 소수점 내림 (버림) / import 필요 X
+
+__ex>__
+```
+System.out.println(Math.sqrt(60));                   // 7.745966692414834
+System.out.println(Math.floor(Math.sqrt(60)));        // 7.0
+System.out.println((int) Math.floor(Math.sqrt(60)));  // 7
+```
+<br>
+
+__◇ 참고 자료__   
+
+: 백준 1977번   
+<br>
+
+### 2-3) Math.round()   
+* 소수점 1번째 자리에서 반올림 / import 필요 X
+
+__ex>__   
+```
+double pie = 3.14159265358979;
+System.out.println(Math.round(pie));              //결과 : 3
+System.out.println(Math.round(pie*100)/100.0);    //결과 : 3.14  → 소수점 2번째 자리까지 출력
+System.out.println(Math.round(pie*1000)/1000.0);  //결과 : 3.142 → 소수점 3번째 자리까지 출력
+```
+
+__◇ 참고 자료__   
+
+: https://coding-factory.tistory.com/250
