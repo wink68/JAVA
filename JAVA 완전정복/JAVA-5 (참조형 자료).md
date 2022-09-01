@@ -57,7 +57,7 @@ System.out.println(a[0]); → 3
 * 기본 자료형을 가지고 있는 참조 자료형 배열
 
 ```
-boolean[arrays = new boolean[3];   // 참/거짓 자료형 배열
+boolean[] array5 = new boolean[3];   // 참/거짓 자료형 배열
 int[] array6 = new int[5];         // 정수 자료형 배열
 double[] array7 = new double[7];   // 실수 자료형 배열
 ```
